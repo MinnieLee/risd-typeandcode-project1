@@ -36,6 +36,32 @@
             cursor:pointer;
         }
 
+        /*for fixed robot-
+            position: fixed;
+            right:2vw;
+            bottom: 2vh;
+            width: 20vh;
+            height: auto;
+        }*/
+
+       /* .left box{
+            width:20%;
+            float:left;
+            padding: 20px;
+            background-color: transparent;
+            height: 100vh;
+            overflow-y:auto;
+        }
+
+        .right box{
+            width:20%;
+            float:right;
+            padding: 20px;
+            background-color: transparent;
+            height: 100vh;
+            overflow-y:auto;
+        }
+*/
         article {
             width: 100%;
             max-width: 900px;
@@ -50,6 +76,11 @@
             padding-top: 20px;
             color:#388087;
         }
+        /* @media only screen and (max-width: 600px) {
+            h1 {
+                padding-top: 80px;
+            }
+        } */
 
         h1:hover{
             padding-top: 10px;
@@ -124,26 +155,46 @@
 
         .fixed-img{
             position: fixed;
-            right:20px;
-            bottom: 20px;
-            width: 10%;
+            right:2vw;
+            bottom: 2vh;
+            width: 20vh;
             height: auto;
+        }
+
+        .split {
+         height: 100%;
+         width: 50%;
+         position: relative;
+         top: 0;
+      }
+        .left {
+            left: -10%;
+            background-color: transparent;
+        }
+        .middle{
+            left:25%;
+            right: 33.3%;
+            bottom: 100%;
+        }
+        .right {
+            right: -10%;
+            background-color: transparent;
         }
 
 	</style>
 </head>
   
 <body>
-
-   <a href="https://www.online-stopwatch.com/timer/15minute/#google_vignette">
-     <div class="timer">
-        
-        15 Min Timer 
+<div class="split left">
+    <a href="https://www.online-stopwatch.com/timer/15minute/#google_vignette">
+        <div class="timer">
+           
+           15 Min Timer 
+       </div>
+    </a>
     </div>
-</a>
-
-<img src="Hello.png" class="fixed-img">
-    
+  
+  <div class="split middle">
     <article>    
     <h1>AI content creation: Ushering in the unimaginable</h1>
     <h2>Embrace cutting-edge AI content creation tools to transform your marketing. Balance human input while harnessing machine efficiency.</h2>
@@ -280,4 +331,10 @@
     </div>
 
 </article>
+</div>
+<div class="split right">
+    <img src="Hello.png" class="fixed-img">
+</div>
+
+
 
